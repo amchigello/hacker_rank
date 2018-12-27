@@ -17,8 +17,8 @@ def minion_game(string):
     # print(xlist)
     kevin_strings = [x for x in xlist if x[0] in ['A', 'E', 'I', 'O', 'U']]
     stuart_strings = [x for x in xlist if x[0] not in ['A', 'E', 'I', 'O', 'U']]
-    # print(kevin_strings)
-    # print(stuart_strings)
+    print(kevin_strings)
+    print(stuart_strings)
     k = calculate_points(kevin_strings, string)
     #print("Kevin " + str(k))
     s = calculate_points(stuart_strings, string)
@@ -32,5 +32,5 @@ def minion_game(string):
 
 
 if __name__ == '__main__':
-    s = "BANANANAAAS"
+    s = "BANANA"
     minion_game(s)
